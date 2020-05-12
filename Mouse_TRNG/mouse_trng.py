@@ -22,10 +22,10 @@ while 1:
     #time.sleep(0.1)
     if pos == mouse_list[-1]:
         continue
-    time.sleep(0.15)
+    time.sleep(0.1)
     mouse_list.append(pos)
     print(len(mouse_list))
-    if len(mouse_list) == 100000:
+    if len(mouse_list) == 300000:
         break
 
 

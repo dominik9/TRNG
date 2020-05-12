@@ -36,7 +36,7 @@ def getOne256bitNum(num):
     fs = pack('d', num[2][1])
     bval = unpack('Q', fs)
     num_bin = num_bin + bin(bval[0])[10:50]
-    print(num_bin)
+    #print(num_bin)
     data_out.append(num_bin)
 
 for i in range(len(data)):
@@ -61,6 +61,9 @@ plt.show()
 plt.plot(hist)
 plt.show()
 entropy = sp.entropy(hist, base=2)
+with open('liczbylosowe.json','w') as file:
+    json.dump(transform8bit, file)
+    print(len(transform8bit))
 print(entropy)
 
 

@@ -1,0 +1,4 @@
+Założenia projektu:
+
+-TRNG z poruszania myszy
+-pobieranie punktów myszy i zapisywanie do pliku (mouse_trng.py, mouse points)
